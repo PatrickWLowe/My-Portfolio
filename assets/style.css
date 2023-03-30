@@ -57,7 +57,6 @@ nav ul li a:hover {
 
 .Patrick {
     display: flex;
-    flex-wrap: wrap;
     margin: 15px;
     padding: 20px;
     border: 10px solid black;
@@ -100,12 +99,14 @@ p {
     display: flex;
     flex-direction: column;
     height: 100%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto
 }
 .first-project {
     display: inline-block;
     width: 100%;
     height: 100%;
-    border: 2px solid black;
 }
 
 .project {
@@ -114,9 +115,11 @@ p {
 }
 
 .description {
-    position: absolute;
+    display: inline;
+    position: relative;
     padding: 5px;
     bottom: 40px;
+    left: 40px;
     color: white;
     background-color: black;
 }
@@ -130,8 +133,7 @@ p {
 }
 
 .child-images {
-    height: 200px;
-    width: 400px;
+
     margin: 10px;
 
 }
