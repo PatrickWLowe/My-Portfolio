@@ -71,14 +71,14 @@ article {
     margin: 20px;
 }
 
-figure img {
+.profile-pic {
     border: 10px solid black;
     border-radius: 50%;
     height: 200px;
     width: 200px;
     align-items: left;
 }
-.About-me {
+.titles {
     font-size: 48px;
     display: inline-block;
     border-right: 5px solid black;
@@ -94,7 +94,29 @@ p {
     justify-content: space-evenly;
     align-items: center;
     color: white;
+}
 
+
+.first-project {
+    width: fit-content;
+    height: fit-content;
+}
+
+.first-project {
+    border: 2px solid black;
+}
+
+.description {
+    position: absolute;
+    padding: 5px;
+    bottom: 40px;
+    color: white;
+    background-color: black;
+}
+
+.smaller {
+    height: 200px;
+    width: 400px;
 }
 
 
