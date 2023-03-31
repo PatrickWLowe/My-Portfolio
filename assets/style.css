@@ -6,8 +6,8 @@
 }
 
 body {
-background-color: darkgray;
-height: 100%;
+    background-color: darkgray;
+    height: 100%;
 }
 
 header {
@@ -15,15 +15,17 @@ header {
 }
 
 .top {
-    height: 50vh;
+    height: fit-content;
     width: 100%;
     background-image: url(../assets/images/Background.jpg);
     background-size: cover;
     background-position: center;
 }
- h1 {
+
+h1 {
     color: white;
- }
+}
+
 span {
     color: rgb(221, 20, 20);
 }
@@ -67,7 +69,16 @@ nav ul li a:hover {
 article {
     display: flex;
     width: 100%;
-    margin: 20px;
+}
+
+.titles-container {
+    display: flex;
+    border-right: 5px solid black;
+    font-size: 48px;
+    text-align: right;
+    padding: 30px;
+    height: 100%;
+    margin-right: 20px;
 }
 
 .profile-pic {
@@ -77,18 +88,9 @@ article {
     width: 200px;
     align-items: left;
 }
-.titles {
-    font-size: 48px;
-    border-right: 5px solid black;
-    margin-right: 35px;
-    text-align: right;
-    padding: 30px;
-    height: 100%;
-}
 
 p {
     font-size: 26px;
-    width: 50%;
     padding: 15px 25px 0 30px;
     justify-content: space-evenly;
     align-items: center;
@@ -101,8 +103,13 @@ p {
     height: 100%;
     max-width: 800px;
     width: 100%;
-    margin: 0 auto
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 .first-project {
     display: inline-block;
     width: 100%;
@@ -145,20 +152,70 @@ footer ul li {
     font-size: 24px;
     font-weight: bold;
 }
+  
+/* Tablet view */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
 
-@media screen and (max-width: 992px) {
+    article {
+        flex-direction: column;
+    }
 
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-  
-  }
-  
-  
-  @media screen and (max-width: 576px) {
-   
-  }
+    .titles-container {
+        font-size: 32px;
+        border-right: 0;
+        border-bottom: 5px solid black;
+        text-align: center;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 
+    .profile-pic {
+        height: 100px;
+        width: 100px;
+    }
 
+    .Patrick {
+        flex-direction: column;
+    }
+
+    .description {
+        left: 10px;
+    }
+}
+
+/* Mobile view */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 10px;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .titles-container {
+        font-size: 32px;
+        border-right: 0;
+        border-bottom: 5px solid black;
+        text-align: center;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        height: 100px;
+        width: 100px;
+    }
+
+    .Patrick {
+        flex-direction: column;
+    }
+
+    .description {
+        left: 10px;
+    }
+}
 
